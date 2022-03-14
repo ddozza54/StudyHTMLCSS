@@ -27,8 +27,11 @@
     <p><strong>BTS - Dionysus</strong></p>
     <audio controls="enabled" src="BTS - Dionysus.mp3"></audio>
     <form>
+        <input type="file" accept=".pdf" />
         <input type="color" />
-        <input placeholder="Name" type="text" />
+        <input required placeholder="Name" type="text" />
+        <input required placeholder="LastName" minlength="5" type="text" />
+
         <input placeholder="Password" type="password" />
         <input type="submit" value="눌러라" />
         <input type="submit" disabled value="안눌림" />
