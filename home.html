@@ -1,56 +1,54 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html>
 
 <head>
-    <link href="styles.css" rel="" stylesheet" />
-    <style>
-        html {
-            background-color: green;
-        }
-
-        h1 {
-            color: olive;
-            font: 50px;
-            text-decoration: underline;
-            font-weight: 800;
-            font-style: italic;
-        }
-
-        body {
-            margin: 0;
-            background-color: cadetblue;
-        }
-
-        div {
-            height: 150px;
-            width: 150px;
-            background-color: coral;
-        }
-
-        span {
-            background-color: goldenrod;
-
-        }
-    </style>
-    <link rel="shortcut icon" sizes="16x16 32x32 64x64"
-        href="http://image.kyobobook.co.kr/images/book/large/446/l9791162203446.jpg" />
-    <title>Home - My first website</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="This is website" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
 </head>
 
 <body>
-    <div></div>
-
-    <header>
-        <h1>Mayong Times</h1>
-    </header>
-    <main>
-        <span>mainmain</span>
-    </main>
-    <footer>
-        &copy; 2022 YJ.H
-    </footer>
+    <h1>Create An Account</h1>
+    <form>
+        <div>
+            <label for="firstname"> First name</label>
+            <input id="firstname" required />
+        </div>
+        <div>
+            <label for="lastname">
+                Last name</label>
+            <input id="lastname" required />
+        </div>
+        <div>
+            <label for="email"> Email</label>
+            <input id="email" required type="email" />
+        </div>
+        <div>
+            <label for="username">
+                Username </label>
+            <input id="username" required />
+        </div>
+        <div>
+            <label for="pass">
+                Password</label>
+            <input id="pass" required type="password" minlength="10" />
+        </div>
+        <div>
+            <label for="birthday">
+                Birth date</label>
+            <input id="birthday" required type="date" />
+        </div>
+        <div>
+            <label for="happy">How happy are you? </label>
+            <input id="happy" required type="range" />
+        </div>
+        <div>
+            <label for="color">
+                What is your fav.color? </label>
+            <input id="color" required type="color" />
+        </div>
+        <button>Create Account</button>
+    </form>
 </body>
 
 </html>
