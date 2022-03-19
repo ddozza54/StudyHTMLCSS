@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html>
 
 <head>
-    <link href="styles.css" rel="" stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
     <style>
         html {
-            background-color: antiquewhite;
+            background-color: tomato;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
         }
 
         body {
-            padding: 20px;
-            height: 100vh;
+            height: 200px;
+            width: 200px;
+            background-color: wheat;
+            border: 3px solid black;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
         }
 
         div {
-            width: 150px;
-            height: 150px;
-            background-color: hotpink;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: aliceblue;
-            font-size: 30px;
+            height: 40px;
+            width: 40px;
+            background-color: teal;
+            border: 3px solid white;
         }
 
-        #second {
-            background-color: skyblue;
+        #middle {
+            width: 150px;
+            border: 3px dashed white;
         }
     </style>
-    <link rel="shortcut icon" sizes="16x16 32x32 64x64"
-        href="http://image.kyobobook.co.kr/images/book/large/446/l9791162203446.jpg" />
-    <title>Home - My first website</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="This is website" />
 </head>
 
 <body>
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
+    <div></div>
+    <div id="middle"></div>
+    <div></div>
+
 </body>
 
 </html>
