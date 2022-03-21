@@ -5,113 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
-    <style>
-        body {
-            background-color: whitesmoke;
-            display: flex;
-        }
-
-        h1 {
-            justify-content: center;
-        }
-
-        div {
-            border: 3px solid white;
-            width: 200px;
-            height: 300px;
-        }
-
-
-        body div {
-            justify-content: center;
-            align-items: center;
-        }
-
-        body~div {
-            background-color: white;
-        }
-
-        div div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        h1+div {
-            position: absolute;
-            top: 100px;
-        }
-
-        .colorbox {
-            position: relative;
-            justify-content: center;
-
-        }
-
-        #top #bottom {
-            display: block;
-            position: flex;
-        }
-
-        #tomato {
-            background-color: tomato;
-        }
-
-        #teal {
-            background-color: teal;
-        }
-
-        #burlywood {
-            background-color: burlywood;
-        }
-
-        #thistle {
-            background-color: thistle;
-        }
-
-        .textbox {
-            background-color: white;
-            height: 100px;
-            position: absolute;
-            top: 20px;
-            border: none;
-        }
-    </style>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
+
     <h1>The Best Colors</h1>
 
 
-    <div class="colorbox" id="tomato">
-        <div class="textbox">
-            <p>Tomato</p>
-            <p>#FF6347</p>
-        </div>
-
-    </div>
-    <div class="colorbox" id="teal">
-        <div class="textbox">
-            <p>Teal</p>
-            <p>#008080</p>
-        </div>
-
-
-        <div class="colorbox" id="burlywood">
+    <main>
+        <div>
             <div class="textbox">
-                <p>Burlywood</p>
-                <p>#DEB887</p>
+                <span>Tomato</span>
+                <p></p>
+                <span>#FF6347</span>
             </div>
 
         </div>
-        <div class="colorbox" id="thistle">
+        <div>
             <div class="textbox">
-                <p>Thistle</p>
-                <p>#D7BFD7</p>
+                <span>Teal</span>
+                <p></p>
+                <span>#008080</span>
             </div>
+        </div>
+        <div>
+            <div class="textbox">
+                <span>Burlywood</span>
+                <p></p>
+                <span>#DEB887</span>
+            </div>
+        </div>
 
-
+        <div>
+            <div class="textbox">
+                <span>Thistle</span>
+                <span>#D7BFD7</span>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
