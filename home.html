@@ -6,51 +6,112 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <style>
+        body {
+            background-color: whitesmoke;
+            display: flex;
+        }
+
+        h1 {
+            justify-content: center;
+        }
+
         div {
-            width: 100px;
+            border: 3px solid white;
+            width: 200px;
+            height: 300px;
+        }
+
+
+        body div {
+            justify-content: center;
+            align-items: center;
+        }
+
+        body~div {
+            background-color: white;
+        }
+
+        div div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        h1+div {
+            position: absolute;
+            top: 100px;
+        }
+
+        .colorbox {
+            position: relative;
+            justify-content: center;
+
+        }
+
+        #top #bottom {
+            display: block;
+            position: flex;
+        }
+
+        #tomato {
+            background-color: tomato;
+        }
+
+        #teal {
+            background-color: teal;
+        }
+
+        #burlywood {
+            background-color: burlywood;
+        }
+
+        #thistle {
+            background-color: thistle;
+        }
+
+        .textbox {
+            background-color: white;
             height: 100px;
-            background-color: bisque;
-        }
-
-        div:last-child {
-            background-color: firebrick;
-        }
-
-        div:first-child {
-            background-color: seagreen;
-        }
-
-        div span {
-            color: tomato;
-        }
-
-        p>span {
-            background-color: skyblue;
-        }
-
-        span+p {
-            text-decoration: underline;
-            text-decoration-color: darkorange;
-        }
-
-        input[type="text"]{
-            border: 2px solid salmon;
+            position: absolute;
+            top: 20px;
+            border: none;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <span>find me</span>
-        <p>hello hello hello hello hello <span>D'oh!</span>hello</p>
+    <h1>The Best Colors</h1>
+
+
+    <div class="colorbox" id="tomato">
+        <div class="textbox">
+            <p>Tomato</p>
+            <p>#FF6347</p>
+        </div>
 
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="colorbox" id="teal">
+        <div class="textbox">
+            <p>Teal</p>
+            <p>#008080</p>
+        </div>
 
-    <input type="text" placeholder="username" />
+
+        <div class="colorbox" id="burlywood">
+            <div class="textbox">
+                <p>Burlywood</p>
+                <p>#DEB887</p>
+            </div>
+
+        </div>
+        <div class="colorbox" id="thistle">
+            <div class="textbox">
+                <p>Thistle</p>
+                <p>#D7BFD7</p>
+            </div>
+
+
 </body>
 
 </html>
