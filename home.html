@@ -8,14 +8,18 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 <style>
-    img {
-        border-radius: 50%;
-        border: 3px solid #000;
-        transition: transform 5s ease-in-out;
+    @keyframes circle {
+        from {
+            tranform: rotate(0);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
     }
 
-    img:hover {
-        transform: rotateZ(-90deg);
+    img {
+        animation: circle 5s infinite;
     }
 </style>
 
